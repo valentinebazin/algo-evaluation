@@ -4,8 +4,13 @@
  * Exemple : [1, 2, 3] et ["apple", "orange", "banana"] renverra : [1, "apple", 2, "orange", 3, "banana"]
  */
 function combine(tableau1, tableau2) {
-
+    for(let i = 0; i < tableau1.length; ++i){
+        return [tableau1[i], tableau2[i], tableau1[i+1], tableau2[i+1], tableau1[i+2], tableau2[i+2]]
+    }
 }
+console.log(combine([3,7,0], ["truc","truc2","truc3"]))
+
+
 
 /**
  * Programmer une fonction prenant en argument un tableau d'éléments et une valeur offset, et qui renvoie un tableau avec les valeurs du tableau en argument décalées de la valeur
@@ -14,8 +19,12 @@ function combine(tableau1, tableau2) {
  * Par exemple : rotate([1, 2, 3, 4, 5], 2) renverra [4, 5, 1, 2, 3] 
  */
 function rotate(tableau, offset) {
-
-}
+    for(let i = 0; i < tableau.length; ++i)
+    return tableau[i + offset]
+    }
+    
+    console.log(rotate([1,3,9], 2))
+    
 
 /**
  * Suite de Syracuse

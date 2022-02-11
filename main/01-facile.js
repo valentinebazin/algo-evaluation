@@ -20,6 +20,16 @@ console.log(signe(0))
  * Astuce : un nombre pair est un nombre dont le reste de la division par 2 est 0.
  */
 function nombresPairs(nombres) {
-    
+    let tableau = [];
+    let index = 0
+   for (let i = 0; i < nombres.length; ++i){
+    if ((nombres[i] % 2) === 0){ 
 
+        tableau[index]=nombres[i]
+        index++
+       } 
+   }
+ return tableau
 }
+let tableauVariables = [15, 192, 6, 1, 152, 6]
+console.log(nombresPairs(tableauVariables))
