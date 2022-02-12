@@ -38,5 +38,15 @@ function rotate(tableau, offset) {
  * Pour 1, la suite sera : [1, 4, 2, 1, 4, 2, 1, 4, 2, 1]
  */
 function syracuse(nombre) {
+for (let i = 0; i < 10; ++i)
 
+if (i == 0)
+return nombre ;
+else if (nombre % 2 == 0)
+return syracuse(nombre / 2);
+else 
+return syracuse(3 * nombre + 1);
 }
+console.log(syracuse(3))
+
+
